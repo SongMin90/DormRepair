@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting">
+        <item>清除缓存</item>
+    </string-array>
+</resources>

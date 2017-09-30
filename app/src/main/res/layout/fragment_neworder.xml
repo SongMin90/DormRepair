@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_neworder_orderContent"
+            android:hint="请填写报修的内容信息"
+            android:gravity="top|left"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <me.zhouzhuo.zzimagebox.ZzImageBox
+        android:id="@+id/zz_image_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:zib_left_margin="20dp"
+        app:zib_right_margin="20dp"
+        app:zib_img_padding="5dp"
+        app:zib_img_size_one_line="4"
+        app:zib_max_line="3"
+        app:zib_img_deletable="true"
+        app:zib_img_add="@drawable/iv_add"
+        app:zib_img_default="@drawable/iv_default"
+        app:zib_img_delete="@drawable/iv_delete"
+        />
+
+    <Button
+        android:id="@+id/btn_neworder_submit"
+        android:text="提交"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/button_custom_style"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

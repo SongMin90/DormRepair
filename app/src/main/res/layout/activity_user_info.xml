@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.songm.dormrepair.UserInfoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"></LinearLayout>
+
+    <com.thinkcool.circletextimageview.CircleTextImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:citv_border_width="2dp"
+        app:citv_border_color="#fff"
+        android:id="@+id/iv_user_info_userIcon"
+        android:onClick="clicl_userIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/user"
+        android:layout_marginTop="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/tv_user_info_userId"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/iv_user_info_userIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tv_user_info_userName"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tv_user_info_userId"
+        android:layout_alignLeft="@+id/tv_user_info_userId"
+        android:layout_alignStart="@+id/tv_user_info_userId"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tv_user_info_userPhone"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tv_user_info_userName"
+        android:layout_alignLeft="@+id/tv_user_info_userName"
+        android:layout_alignStart="@+id/tv_user_info_userName"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tv_user_info_userRoom"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tv_user_info_userPhone"
+        android:layout_alignLeft="@+id/tv_user_info_userPhone"
+        android:layout_alignStart="@+id/tv_user_info_userPhone"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:onClick="click_logout"
+        android:text="退出登录"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBottom="@+id/iv_user_info_userIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

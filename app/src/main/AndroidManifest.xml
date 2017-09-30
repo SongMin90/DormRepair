@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.songm.dormrepair">
+
+    <application
+        android:name="com.mob.MobApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="寝室报修"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="com.mylhyl.circledialog"
+        tools:replace="android:icon, android:theme, android:label">
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="2102ea6e0246e" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="00cfe51734cd373730b3024679b7d93f" />
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/WelcomeStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="用户登录" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="用户注册" />
+        <activity
+            android:name=".MainActivity"
+            android:label="首页"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserInfoActivity"
+            android:label="我的信息" />
+        <activity
+            android:name=".ForgetPwdActivity"
+            android:label="重置密码" />
+        <activity
+            android:name=".LookImageActivity"
+            android:label="浏览图片"
+            android:theme="@style/WelcomeStyle" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="关于" />
+        <activity
+            android:name=".OrderInfoActivity"
+            android:label="订单信息" />
+        <activity
+            android:name=".OrderInfoMoreActivity"
+            android:label="更多信息" />
+        <activity
+            android:name=".OrderEvalInfoActivity"
+            android:label="评价详情" />
+        <activity
+            android:name=".SettingActivity"
+            android:label="设置" />
+    </application>
+
+</manifest>
